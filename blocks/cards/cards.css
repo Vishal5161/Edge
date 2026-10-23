@@ -1,11 +1,21 @@
 .cards > ul {
   list-style: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
   gap: 24px;
+  background-color: rgb(179, 196, 204);
+  border-left: 100px;
+
 }
+
+ .cards :hover {
+  transform: translateY(-8px);
+  /* transform: translateZ(-10px); */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 .cards > ul > li {
   border: 1px solid #dadada;

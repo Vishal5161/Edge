@@ -1,0 +1,27 @@
+.carousel-viewport {
+  width: 50%;
+  overflow: hidden;
+  height: 25%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #dadada;
+  background: var(--background-color);
+
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

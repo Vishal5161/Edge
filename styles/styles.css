@@ -323,3 +323,45 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+
+.packs > ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+
+  background-color: rgb(179, 196, 204);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.packs > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.packs > ul > li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.packs .packs-card-body {
+  margin: 16px;
+}
+
+.packs .packs-card-image {
+  line-height: 0;
+}
+
+.packs img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
